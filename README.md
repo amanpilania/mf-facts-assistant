@@ -6,8 +6,7 @@ A small retrieval-grounded FAQ assistant that answers factual questions about IC
 
 | | |
 |---|---|
-| Working prototype | https://claude.ai/artifact/3Am7iL3ZmKVuTBocS3vhzs |
-| GitHub repository | _add your repo URL here_ |
+| Working prototype | https://mf-assistant.netlify.app/|
 
 The hosted prototype (`hosted_demo.html`) runs the full pipeline in the browser: PII and prompt-injection checks, refusal rules, scheme-filtered BM25 retrieval, grounded answers of at most 3 sentences, a check that every number appears in the cited source, one source link and the last-updated date. It retrieves over fact passages restated from 10 of the official sources below and uses Claude for wording; if AI is unavailable to a viewer, it quotes the matching official fact instead. The Python app in this repo (`streamlit_app.py`) is the full version that fetches and ingests all 15 sources.
 
